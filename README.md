@@ -1,5 +1,5 @@
 # storeMap
-This repository is an example use case of [defineStoreMap (click to see file)](stores/storeMap.ts). It provides a utility similiar to pinia's "defineStore" but allows instantiating multiple instances based off an arbitrary key, and provides a mechnism very similar to [vue KeepAlive built-in component](https://vuejs.org/guide/built-ins/keep-alive). The example is kind of arbitary, there are a five text inputs that when changed will call `useStopwatches().storeMap.use(() => key.value)` [(here)](src/StopWatch.vue) where `key.value` is what you inputed.
+This repository is an example use case of [defineStoreMap (click to see file)](src/stores/storeMap.ts). It provides a utility similiar to pinia's "defineStore" but allows instantiating multiple instances based off an arbitrary key, and provides a mechnism very similar to [vue KeepAlive built-in component](https://vuejs.org/guide/built-ins/keep-alive). The example is kind of arbitary, there are a five text inputs that when changed will call `useStopwatches().storeMap.use(() => key.value)` [(here)](src/components/StopWatch.vue) where `key.value` is what you inputed.
 
 The example is hosted at https://subtle-bienenstitch-4b0fd0.netlify.app/
 
